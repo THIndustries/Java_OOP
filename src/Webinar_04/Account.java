@@ -1,12 +1,12 @@
 package Webinar_04;
 
-public class UniversalAccount {
+public class Account <T>{
 
-    private final Object id;
+    private final T id;
 
     private double amount;
 
-    public Object getId() {
+    public T getId() {
         return id;
     }
 
@@ -14,7 +14,7 @@ public class UniversalAccount {
         return amount;
     }
 
-    public UniversalAccount(Object id, double amount) {
+    public Account(T id, double amount) {
         this.id = id;
         this.amount = amount;
     }

@@ -1,11 +1,18 @@
 package Webinar_04;
 
 public class AccountIdentifier {
+
     private int id;
+
     private String add;
+
 
     public int getId() {
         return id;
+    }
+
+    public String getAdd() {
+        return add;
     }
 
     public AccountIdentifier(int id, String add) {
@@ -13,15 +20,11 @@ public class AccountIdentifier {
         this.add = add;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getAdd() {
-        return add;
-    }
-
-    public void setAdd(String add) {
-        this.add = add;
+    @Override
+    public String toString() {
+        return "AccountIdentifier{" +
+                "id=" + id +
+                ", add='" + add + '\'' +
+                '}';
     }
 }
