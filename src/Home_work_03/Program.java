@@ -8,7 +8,6 @@ import java.util.Random;
 public class Program {
 
     static Random random = new Random();
-
     static Employee genereteEmployee() { //возвращаем родительский тип
         String[] names = new String[] { "Анатолий", "Глеб", "Клим", "Мартин", "Лазарь",
                 "Владлен", "Клим", "Панкратий", "Рубен", "Герман" };
